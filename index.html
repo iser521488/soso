@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музыка с Howler.js</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+</head>
+<body>
+    <h1>сосал?</h1>
+    <button onclick="playMusic()" style="    width: 200px;
+    height: 190px;
+    position: absolute;
+    border: 0;
+    display: block;">ДАДАДАДА</button>
+
+    <script>
+        // Создаем объект Howl для воспроизведения музыки
+        var sound = new Howl({
+            src: ['music.mp3'], // Путь к аудиофайлу
+            autoplay: false,   // Автовоспроизведение отключено
+            loop: true,        // Зацикливание музыки
+            volume: 1.0        // Громкость (1.0 - максимум)
+        });
+
+        // Функция для воспроизведения музыки
+        function playMusic() {
+            sound.play(); // Запуск воспроизведения
+        }
+    </script>
+</body>
+</html>
